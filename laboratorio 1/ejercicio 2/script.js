@@ -1,6 +1,6 @@
 var numA = 13;
 var numB = 17;
-
+var text = "hola";
 /*suma*/
 var rS = numA + numB;
 console.log("The result is :" + rS);
@@ -22,3 +22,5 @@ console.log("The result is :" + rD);
 var rR = numB %2;
 console.log("El resto es " + rR);
 
+/*Mix*/
+console.log(text + numA);
