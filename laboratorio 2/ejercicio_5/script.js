@@ -43,7 +43,6 @@ class AlumnoBecado extends Alumno{
   }
 }
 
-
 //test
 
 const alumno1 = new Alumno("Anqi",20,7);
