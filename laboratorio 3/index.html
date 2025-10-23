@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h2>Pagina de control</h2>
+
+    <label>Nikename : 
+        <input type="text" id="nikename">
+    </label><br><br>
+
+    <label>Color de fondo :
+    <input type="color" id="bgcolor">
+    </label><br><br>
+
+    <button onclick="guardar()">Guardar</button>
+    <button onclick="aplicar()">Aplicar</button>
+
+    <p>Sesión recargada: <span id="contador">0</span> veces</p>
+
+    <button onclick="abrirHijo()">Abrir Ventana Hija</button>
+    <br><br>
+
+    <iframe src="marco_interno.html" id="marco" width="300" height="100"></iframe>
+    <br>
+
+    <button onclick="cambiarTitulo()">Cambiar título del iframe</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
