@@ -1,12 +1,17 @@
 //Parte 1: Conceptos Fundamentales de Arrays
 
+console.log("En parte 1 --------------------");
+
 const datosUsuario = ["Ana",18,true];
 
 console.log("El segundo elemento del array es:", datosUsuario[1]);
 console.log("El longitud de esta array es :",datosUsuario.length);
 
-// Parte 2: Modificación de Arrays: Añadir y Eliminar Elementos
 
+
+
+// Parte 2: Modificación de Arrays: Añadir y Eliminar Elementos
+console.log("En parte 2 -------------------");
 //1. Añadir al final: Utilizad el método push() 
 //para añadir dos nuevos elementos al final del array datosUsuario.
 //Mostrad la nueva longitud devuelta por el método.
@@ -40,21 +45,23 @@ let deleteFirst = datosUsuario.shift();
 console.log("Elemento eliminado con shift():", deleteFirst);
 console.log("Array actual:", datosUsuario);
 
-//Parte 3: Métodos Avanzados de Arrays
 
+
+
+
+//Parte 3: Métodos Avanzados de Arrays
+console.log("En parte 3 -------------------");
 //1. Concatenación
 let arrayPalabra = ["A","B","C"];
 let arrayTotal = datosUsuario.concat(arrayPalabra);
 
 console.log("Array total (concatenado):", arrayTotal);
 
-
 //2. Ordenación Simple
 let numero = [10, 21, 2003,17];
 console.log("Array original : ",numero);
 numero.sort();
 console.log("Array ordenado por defecto : ",numero);
-
 
 //3. Ordenación Personalizada
 //ASC
@@ -76,7 +83,11 @@ console.log("ArrayTotal antes de splice", arrayTotal);
 arrayTotal.splice(2,2,"hallo","good");//splice(donde empezar,cuanto,nuevoElemento...)
 console.log("ArrayTotal después de splice:", arrayTotal);
 
+
+
+
 //Parte 4: Funciones Predefinidas de validación y conversión
+console.log("En parte 2 -------------------");
 let cadena = "3.14159";
 let text = "hola mundo";
 
