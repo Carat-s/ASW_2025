@@ -27,3 +27,4 @@ for(let i =0; i< inventario.length;i++){
     console.log("Elemento " + (i + 1) + ": " + inventario[i][0]);
 
 };
+
