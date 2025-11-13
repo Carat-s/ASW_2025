@@ -28,3 +28,33 @@ for(let i =0; i< inventario.length;i++){
 
 };
 
+//2. Ejercicios con Funciones
+
+
+//2.1. Función para Cálculo de Inventario
+
+console.log("Ejercicio 2.1: Función para Cálculo de Inventario");
+
+function calcularValorTotal(inventario){
+    let total = 0;
+    for(let i = 0; i<inventario.length;i++){
+        total += inventario[i][1] * inventario[i][2];
+    }
+    return total;
+}
+
+console.log("Valor total : " , calcularValorTotal(inventario));
+
+
+
+//2.2. Uso de Funciones Anónimas:
+console.log("----------------------------------------")
+console.log("Ejercicio 2.2: Uso de Funciones Anónimas");
+
+function ordenarPorPrecio (a , b){
+    return a[2] -b[2];
+}
+
+inventario.sort(ordenarPorPrecio);
+console.log("precio ASC : " ,inventario);
+
