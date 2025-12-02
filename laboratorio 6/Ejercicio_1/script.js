@@ -6,7 +6,7 @@ class Pais{
         this.nombre = nombre; // strinng
         this.poblacion = poblacion; // numero
         this.area = area; // numero km2
-        this.ciudades = ciudades || [] ; // array
+        this.ciudades = ciudades  || []; // array
     }
 
 
@@ -15,10 +15,13 @@ class Pais{
 
     incrementarPoblacion(cantidad){
         this.poblacion += cantidad;
+        //return this.poblacion
     }
 
     densidad(){
         return this.poblacion / this.area;
+        //let densidadCalucula = this,poblacnion;
+        //return desidadCalcula /= this.area;
     }
 
 
