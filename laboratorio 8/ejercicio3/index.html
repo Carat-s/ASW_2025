@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polimorfismo</title>
+</head>
+<body>
+    <script>
+        class Coche extends Vehiculo {
+            constructor(marca, modelo, numPuertas){
+                super(marca,modelo),
+                this.numPuertas = numPuertas;
+            }
+
+            acelerar(incremento){
+                super.acelerar(incremento);
+                console.log("El coche acelera usando el motor");
+            }
+
+            mostrarInformacion(){
+                console.log("Coche" + this.marca + this.modelo + "puertas : " + this.numPuertas);
+            }
+        }
+
+        class Bicicleta extends Vehiculo{
+            acelerar(incremento){
+                super.acelerar(incremento);
+                console.log("La bicicleta acelera con fuerza humana");
+            }
+
+            mostrarInformacion(){
+                console.log("Bici" + this.marca + this.modelo);
+            }
+        }
+    </script>
+</body>
+</html>
