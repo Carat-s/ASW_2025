@@ -6,33 +6,11 @@
     <title>Polimorfismo</title>
 </head>
 <body>
-    <script>
-        class Coche extends Vehiculo {
-            constructor(marca, modelo, numPuertas){
-                super(marca,modelo),
-                this.numPuertas = numPuertas;
-            }
+    <h1>Ejercicio 3 - Polimorfismo</h1>
 
-            acelerar(incremento){
-                super.acelerar(incremento);
-                console.log("El coche acelera usando el motor");
-            }
+    <!--Padre-->
+    <script src="../ejercicio1/vehiculo.js"></script>
 
-            mostrarInformacion(){
-                console.log("Coche" + this.marca + this.modelo + "puertas : " + this.numPuertas);
-            }
-        }
-
-        class Bicicleta extends Vehiculo{
-            acelerar(incremento){
-                super.acelerar(incremento);
-                console.log("La bicicleta acelera con fuerza humana");
-            }
-
-            mostrarInformacion(){
-                console.log("Bici" + this.marca + this.modelo);
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
